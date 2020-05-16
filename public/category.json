@@ -1,0 +1,262 @@
+{
+  "code": 200,
+  "List": [
+    {
+      "cate_id": "1",
+      "cate_name": "美妆护理",
+      "ishaveChild": true,
+      "children": [
+        {
+          "child_id": "162",
+          "name": "美容工具",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1546063682673.png"
+        },
+        {
+          "child_id": "158",
+          "name": "身体护理",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552373805723.jpeg"
+        },
+        {
+          "child_id": "157",
+          "name": "口腔护理",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1546063976745.png"
+        },
+        {
+          "child_id": "156",
+          "name": "沐浴用品",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1546064096615.png"
+        },
+        {
+          "child_id": "155",
+          "name": "美发护发",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/15523736429.jpeg"
+        },
+        {
+          "child_id": "154",
+          "name": "防晒隔离",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1546064389340.png"
+        },
+        {
+          "child_id": "153",
+          "name": "精华精油",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1546064199295.png"
+        },
+        {
+          "child_id": "160",
+          "name": "缤纷彩妆",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552373947733.png"
+        },
+        {
+          "child_id": "161",
+          "name": "魅力香氛",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552373995880.jpeg"
+        },
+        {
+          "child_id": "147",
+          "name": "面部护理",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374017877.png"
+        }
+      ],
+      "cimgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554947329326.jpeg"
+    },
+    {
+      "cate_id": "11",
+      "cate_name": "家用电器",
+      "ishaveChild": true,
+      "children": [
+        {
+          "child_id": "69",
+          "name": "厨房电器",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374146304.jpeg"
+        },
+        {
+          "child_id": "71",
+          "name": "影音电器",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374164322.jpeg"
+        },
+        {
+          "child_id": "72",
+          "name": "大家电",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374182869.jpeg"
+        },
+        {
+          "child_id": "74",
+          "name": "生活电器",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374114312.jpeg"
+        }
+      ],
+      "cimgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1545963234553.png"
+    },
+    {
+      "cate_id": "2",
+      "cate_name": "手机数码",
+      "ishaveChild": true,
+      "children": [
+        {
+          "child_id": "23",
+          "name": "手机通讯",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552362507257.png"
+        },
+        {
+          "child_id": "24",
+          "name": "手机配件",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374496515.png"
+        },
+        {
+          "child_id": "26",
+          "name": "数码配件",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374534898.jpeg"
+        },
+        {
+          "child_id": "27",
+          "name": "智能设备",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374550125.jpeg"
+        },
+        {
+          "child_id": "227",
+          "name": "数码影像",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552469991817.jpeg"
+        }
+      ],
+      "cimgurl": ""
+    },
+    {
+      "cate_id": "8",
+      "cate_name": "家居家纺",
+      "ishaveChild": true,
+      "children": [
+        {
+          "child_id": "58",
+          "name": "床上用品",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374284755.jpeg"
+        },
+        {
+          "child_id": "173",
+          "name": "居家布艺",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1546052619901.png"
+        },
+        {
+          "child_id": "174",
+          "name": "家居饰品",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1546076691788.png"
+        },
+        {
+          "child_id": "175",
+          "name": "特色工艺品",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548914627967.png"
+        }
+      ],
+      "cimgurl": ""
+    },
+    {
+      "cate_id": "4",
+      "cate_name": "日用百货",
+      "ishaveChild": true,
+      "children": [
+        {
+          "child_id": "35",
+          "name": "居家用品",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374284755.jpeg"
+        },
+        {
+          "child_id": "36",
+          "name": "餐具用品",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552468758522.png"
+        },
+        {
+          "child_id": "169",
+          "name": "收纳必备",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374299938.jpeg"
+        },
+        {
+          "child_id": "170",
+          "name": "清洁用具",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374333798.png"
+        }
+      ],
+      "cimgurl": ""
+    },
+    {
+      "cate_id": "196",
+      "cate_name": "精致鞋靴",
+      "ishaveChild": true,
+      "children": [
+        {
+          "child_id": "201",
+          "name": "女靴",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548914444693.png"
+        },
+        {
+          "child_id": "202",
+          "name": "休闲女鞋",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/154891446263.png"
+        },
+        {
+          "child_id": "203",
+          "name": "高跟鞋",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/154891449121.png"
+        },
+        {
+          "child_id": "204",
+          "name": "凉鞋拖鞋",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548914525621.png"
+        },
+        {
+          "child_id": "205",
+          "name": "休闲男鞋",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548914538589.png"
+        },
+        {
+          "child_id": "206",
+          "name": "正装男鞋",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548914557272.png"
+        }
+      ],
+      "cimgurl": ""
+    },
+    {
+      "cate_id": "3",
+      "cate_name": "服饰箱包",
+      "ishaveChild": true,
+      "children": [
+        {
+          "child_id": "31",
+          "name": "女装",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548913760797.png"
+        },
+        {
+          "child_id": "32",
+          "name": "男装",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548913777647.png"
+        },
+        {
+          "child_id": "33",
+          "name": "内衣",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548907740503.png"
+        },
+        {
+          "child_id": "34",
+          "name": "女包",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548913793289.png"
+        },
+        {
+          "child_id": "165",
+          "name": "男包",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552468604466.png"
+        },
+        {
+          "child_id": "167",
+          "name": "旅行箱包",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1548913915966.png"
+        },
+        {
+          "child_id": "168",
+          "name": "服装配饰",
+          "picture": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1546076828305.png"
+        }
+      ],
+      "cimgurl": ""
+    }
+  ],
+  "message": "成功"
+}
