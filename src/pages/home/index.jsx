@@ -1,30 +1,34 @@
 import React from 'react';
 
 import './style.less'
-
 import { connect } from 'react-redux'
-import { gitHomeNmae } from '@/action/home'
 
-export default @connect(state=>{
-    const { home, login } = state
-    console.log(home,login)
-    return{
+import Nav from '@@/Nav'
+import Routers from './router'
+
+export default @connect(state => {
+    const { home } = state
+    return {
         home: home,
-        login: login,
-        
     }
-},{
-    gitHomeNmae,
 })
-class Home extends React.PureComponent{
+class Home extends React.PureComponent {
 
-    btn=()=>{
-        this.props.gitHomeNmae('home1111111')
+    componentDidMount() {
+
+        if (!this.props.home.user) {
+            this.props.history.push('/login')
+        }
     }
-    render(){
-        return(
+    render() {
+        const { user } = this.props.home
+        return (
             <div className="pages-home">
-                <button onClick={this.btn}>githome</button>
+                <header>{user}</header>
+                <div className='pages-cont'>
+                    <Nav />
+                    <Routers />
+                </div>
             </div>
         )
     }

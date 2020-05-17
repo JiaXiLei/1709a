@@ -4,7 +4,7 @@ const loginState = {
 }
 export default function login(state = loginState, action) {
     
-    console.log(action,'loginaction')
+    // console.log(action,'loginaction')
 
     switch (action.type) {
 

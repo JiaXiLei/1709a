@@ -2,9 +2,15 @@
 
 
 export function gitHomeNmae(option){
-    console.log(option,'option')
+    // console.log(option,'option')
     return{
         type: 'GET_HOME_NAME',
+        payload: option
+    }
+}
+export function getTableData(option){
+    return{
+        type: 'GET_TABLE_DATA',
         payload: option
     }
 }

@@ -4,11 +4,12 @@ import {
     BrowserRouter,
     Switch,
     Route,
-    Redirect,
 } from "react-router-dom";
 
-import Home from '@/pages/home'
-import Login from '@/pages/login'
+
+import Login from '@/pages/login'  //登陆
+import Registered from '@/pages/registered'  //注册
+import Home from '@/pages/home'  //首页
 
 export default class Routes extends React.PureComponent {
 
@@ -18,7 +19,8 @@ export default class Routes extends React.PureComponent {
                 <Switch>
                     <Route path='/home' component={Home} />
                     <Route path='/login' component={Login} />
-                    <Redirect to='/home' />
+                    <Route path='/registered' component={Registered} />
+                    <Route path='/' component={Home} />
                 </Switch>
             </BrowserRouter>
         )

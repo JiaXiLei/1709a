@@ -1,53 +1,50 @@
 import React from 'react';
 
-import './style.less'
-import { connect } from 'react-redux'
+import '@/pages/login/style.less'
 import { Input, Button, Icon, message, Form } from 'antd'; //引用antd插件
 import { api } from '@/utils/api'
 import { postAxios } from '@/utils/request'
-import { getUser } from '@/action/login'
 
-export default @connect(state => {
-    const { home, login } = state
-    return {
-        home,
-        login,
-    }
-}, {
-    getUser
-})
-@Form.create()
-class Login extends React.Component {
+export default @Form.create()
+class registered extends React.Component {
 
     handelSubmit = e => {
         e.preventDefault()  //取消默认事件 默认刷新页面
-
         const { form } = this.props
-
         form.validateFields((err, values) => {
             if (!err) {
-                postAxios(api.login, values)
-                    .then(res => {
-                        if (res.data.status === '200') {
-                            message.success(res.data.message)
-                            this.props.getUser(res.data.data)
-                            setTimeout(() => {
-                                this.props.history.push('/home')
-                            }, 2000);
-                        } else {
-                            message.warning(res.data.message)
-                        }
-                    })
+                if (values.password === values.passwords) {
+
+                    const obj = {
+                        username: values.username,
+                        password: values.password,
+                    }
+                    postAxios(api.register, obj)
+                        .then(res => {
+                            console.log(res)
+                            if (res.data.status === "200") {
+                                message.success('注册成功')
+                                setInterval(() => {
+                                    this.props.history.push('/login')
+                                }, 2000);
+
+                            } else {
+                                message.warning('该账户已存在')
+                            }
+                        })
+                } else {
+                    message.warning('两次密码输入不一致')
+                }
             }
         })
     }
     histo = () => {
-        this.props.history.push('/registered')
+        this.props.history.push('/login')
     }
     render() {
         const { getFieldDecorator } = this.props.form
         return (
-            <div className='pages-ligon'>
+            <div className='pages-regisered'>
                 <Form
                     layout='vertical'
                     onSubmit={this.handelSubmit}
@@ -86,9 +83,25 @@ class Login extends React.Component {
                         )}
                     </Form.Item>
                     <Form.Item>
+                        {getFieldDecorator('passwords', {
+                            rules: [
+                                {
+                                    required: true,
+                                    message: '请确认密码'
+                                }
+                            ]
+                        })(
+                            <Input.Password
+                                prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                                type="password"
+                                placeholder="Passwords"
+                            />
+                        )}
+                    </Form.Item>
+                    <Form.Item>
                         <p className="login-btn">
-                            <Button type="primary" htmlType="submit" className="login-form-button">登陆</Button>
-                            <a onClick={this.histo}>暂无账号 注册！</a>
+                            <Button type="primary" htmlType="submit" className="login-form-button">注册</Button>
+                            <a onClick={this.histo}>已有账号 登陆！</a>
                         </p>
                     </Form.Item>
 
