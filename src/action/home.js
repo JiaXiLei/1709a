@@ -14,3 +14,9 @@ export function getTableData(option){
         payload: option
     }
 }
+export function getlistWithData(option){
+    return{
+        type: 'GET_LIST_WITH_DATA',
+        payload: option
+    }
+}

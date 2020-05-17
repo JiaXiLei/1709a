@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Form, Button, Input, Upload } from 'antd'
-
+import { Form, Button, Input, Upload, message } from 'antd'
+import { postAxios } from '@/utils/request'
+import { api } from '@/utils/api'
 export default @Form.create()
 class Add extends React.Component {
 
@@ -10,14 +11,35 @@ class Add extends React.Component {
         const { form } = this.props
         form.validateFields((err, values) => {
             if (!err) {
-                console.log(values)
+
+                if (values.upload[0].status === "done") {
+                    const hospital = values.upload[0].response.data.url
+
+                    const obj = {
+                        name: values.name,
+                        age: values.age,
+                        msg: values.msg,
+                        gender: values.gender,
+                        // hospital: hospital.split('//')[1],
+                        hospital: null,
+                    }
+                    console.log(obj)
+                    postAxios('http://api.baxiaobu.com/index.php/home/v5/add', obj)
+                        .then(res => {
+                            console.log(res)
+                        })
+                } else {
+                    message.warning('图片格式有误 不能上传！')
+                }
+
+
             }
         })
     }
     normFile = e => {
         // console.log('Upload event:',e.fileList)
         if (Array.isArray(e)) {
-            return e
+            return e.fileList
         }
         return e && e.fileList
     }
@@ -43,6 +65,13 @@ class Add extends React.Component {
                     <Form.Item label='价格'>
                         {getFieldDecorator('msg', {
                             rules: [{ required: true, message: '请输入价格!' }]
+                        })(
+                            <Input />
+                        )}
+                    </Form.Item>
+                    <Form.Item label='描述'>
+                        {getFieldDecorator('gender', {
+                            rules: [{ required: true, message: '概括该商品' }]
                         })(
                             <Input />
                         )}

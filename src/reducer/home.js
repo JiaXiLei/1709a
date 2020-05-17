@@ -1,6 +1,7 @@
 const homeState = {
     user: localStorage.getItem('user'),
-    tableData: []
+    tableData: [],
+    listwithData: []
 }
 
 
@@ -13,6 +14,10 @@ export default function home(state = homeState, action) {
 
         case 'GET_TABLE_DATA':
             return { ...state, tableData: action.payload }
+
+        case 'GET_TABLE_DATA':
+            return { ...state, listwithData: action.payload }
+
 
         default:
             return state
